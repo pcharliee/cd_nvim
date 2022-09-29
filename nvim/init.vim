@@ -12,7 +12,8 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 " Commenting blocks of code.
 augroup commenting_blocks_of_code
   autocmd!
-  autocmd FileType c,cpp,java,scala,javascript let b:comment_leader = '// '
+  autocmd FileType c,cpp,java,scala,javascript,jsx let b:comment_leader = '// '
+  autocmd FileType javascript.jsx      setlocal commentstring ={/*\ %s\ */}i
   autocmd FileType sh,ruby,python      let b:comment_leader = '# '
   autocmd FileType conf,fstab          let b:comment_leader = '# '
   autocmd FileType tex                 let b:comment_leader = '% '

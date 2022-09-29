@@ -17,10 +17,26 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Color theme
     Plug 'arcticicestudio/nord-vim'
 
+    " Collection of common configurations for the Nvim LSP client
+    Plug 'neovim/nvim-lspconfig'
+    
+    " Extentions to built-in LSP, for example, providing type inlay hints
+    Plug 'nvim-lua/lsp_extensions.nvim'
+    
+    " Autocompletion framework
+    Plug 'hrsh7th/nvim-cmp'
+    " cmp LSP completion
+    Plug 'hrsh7th/cmp-nvim-lsp'
+    " cmp Snippet completion
+    Plug 'hrsh7th/cmp-vsnip'
+    " cmp Path completion
+    Plug 'hrsh7th/cmp-path'
+    Plug 'hrsh7th/cmp-buffer'
+
     " Telescop 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
     
     " Conquer of Completion
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
