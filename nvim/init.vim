@@ -1,6 +1,7 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 colorscheme nord
 
+hi Visual term=reverse cterm=reverse guibg=Grey
 " remap <leader>
 let mapleader = " "
 "Find files using Telescope command-line sugar.
@@ -9,10 +10,17 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
+" Toggle NERDTree 
+nmap <silent> <leader>nn :NERDTreeToggle<CR>
+" No highlight
+nnoremap <silent>no :noh<cr>
+" Clear extra spaces at the end on every line
+nnoremap <silent>cs :%s/\s$/<cr>
+
 " Commenting blocks of code.
 augroup commenting_blocks_of_code
   autocmd!
-  autocmd FileType c,cpp,java,scala,javascript,jsx let b:comment_leader = '// '
+  autocmd FileType c,cpp,java,scala,javascript,jsx,typescript,tsx let b:comment_leader = '// '
   autocmd FileType javascript.jsx      setlocal commentstring ={/*\ %s\ */}i
   autocmd FileType sh,ruby,python      let b:comment_leader = '# '
   autocmd FileType conf,fstab          let b:comment_leader = '# '

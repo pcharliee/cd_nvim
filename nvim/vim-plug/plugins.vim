@@ -19,6 +19,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Collection of common configurations for the Nvim LSP client
     Plug 'neovim/nvim-lspconfig'
+
+    " ESLINT
+    Plug 'eslint/eslint'
+    Plug 'MunifTanjim/eslint.nvim'
     
     " Extentions to built-in LSP, for example, providing type inlay hints
     Plug 'nvim-lua/lsp_extensions.nvim'
