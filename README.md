@@ -1,6 +1,11 @@
 # NVIM config and plugins
 
-VIM PLUG - https://github.com/junegunn/vim-plug
-TELESCOPE - https://github.com/nvim-telescope/telescope.nvim
-COC - https://github.com/neoclide/coc.nvim
-NERDTree - https://github.com/preservim/nerdtree
+- [Vim-plug] - Manager for plugins
+- [Telescope] - For searching inside the directory
+- [CoC] - Autocompletion
+- [NERDTree] - File navigation
+
+[Vim-plug]: <https://github.com/junegunn/vim-plug>
+[Telescope]: <https://github.com/nvim-telescope/telescope.nvim>
+[CoC]: <https://github.com/nvim-telescope/telescope.nvim>
+[NERDTree]: <https://github.com/preservim/nerdtree>
